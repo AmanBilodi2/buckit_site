@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buckit — App Support (iOS)</title>
+<meta name="description" content="Help for Buckit on iOS. FAQs, troubleshooting, and ways to contact support.">
+<meta name="robots" content="index,follow">
+<style>
+:root {
+  --bg: #0f1115;
+  --card: #151923;
+  --text: #e8ecf1;
+  --muted: #a8b0bd;
+  --accent: #ff7a00; /* Buckit orange */
+  --accent-2: #ffb36b;
+  --border: #222837;
+  --success: #27c93f;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.container { max-width: 980px; margin: 0 auto; padding: 24px; }
+.header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 0; }
+.brand { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 20px; }
+.badge { padding: 4px 10px; border: 1px solid var(--border); background: #0e131d; border-radius: 999px; color: var(--muted); font-size: 12px; }
+.hero { padding: 48px 0 20px; }
+h1 { font-size: 40px; line-height: 1.1; margin: 0 0 8px; letter-spacing: -0.02em; }
+.sub { font-size: 18px; color: var(--muted); margin-bottom: 20px; }
+.cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; }
+.button { display: inline-block; padding: 12px 16px; border-radius: 12px; border: 1px solid var(--border); background: var(--accent); color: #0b0d12; font-weight: 700; }
+.button.secondary { background: #0e131d; color: var(--text); }
+.grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
+.card { grid-column: span 12; background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px; }
+.card h3 { margin-top: 0; }
+.kv { display: grid; grid-template-columns: 140px 1fr; gap: 8px; font-size: 15px; }
+.kv div:nth-child(odd) { color: var(--muted); }
+.footer { margin: 48px 0 24px; padding-top: 12px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+.list { margin: 0; padding-left: 18px; }
+.section-title { font-size: 24px; margin: 28px 0 12px; }
+.small { font-size: 14px; color: var(--muted); }
+hr { border: none; border-top: 1px solid var(--border); margin: 20px 0; }
+code.inline { background: #0e131d; padding: 2px 6px; border-radius: 6px; border: 1px solid var(--border); }
+@media (min-width: 700px) {
+  .card.span6 { grid-column: span 6; }
+  .card.span4 { grid-column: span 4; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="brand">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <circle cx="12" cy="12" r="10" stroke="white" stroke-width="1.5"></circle>
+        <path d="M4 12h16M12 4v16" stroke="#ff7a00" stroke-width="1.5"></path>
+      </svg>
+      Buckit Support
+      <span class="badge">iOS</span>
+    </div>
+    <a class="button secondary" href="index.html">Back to Website</a>
+  </div>
+
+  <section class="hero">
+    <h1>App Support</h1>
+    <p class="sub">Get help with installing, logging games, finding players, permissions, and more.</p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Getting Started</h2>
+    <div class="card">
+      <ol class="list">
+        <li>Download Buckit on iOS and create your player (position, playstyle).</li>
+        <li>Find your opponent by username or QR and start a 1v1.</li>
+        <li>After the game, log the result. Both players confirm to finalize.</li>
+        <li>Earn badges and watch your rating update over time.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">FAQs</h2>
+    <div class="grid">
+      <div class="card span6">
+        <h3>I can’t find my opponent by username</h3>
+        <p>Check spelling and capitalization. If still missing, ask them to tap <em>Profile → QR</em> so you can scan and add them quickly.</p>
+      </div>
+      <div class="card span6">
+        <h3>How do ratings and credibility work?</h3>
+        <p>We use an ELO-style system. Beating similar or higher-rated players moves you up faster. Confirmed, dispute-free games increase your credibility so your results carry full weight.</p>
+      </div>
+      <div class="card span6">
+        <h3>Location or Camera isn’t working</h3>
+        <p>Go to <em>Settings → Privacy</em> on iOS and ensure Buckit has permission for Location (for Nearby) and Camera (for QR). You can use Buckit without these, but discovery and QR may be limited.</p>
+      </div>
+      <div class="card span6">
+        <h3>How do I edit or dispute a result?</h3>
+        <p>Open the logged game in your history and tap <em>Report</em>. We’ll temporarily remove rating impact until both players confirm the corrected result.</p>
+      </div>
+      <div class="card span6">
+        <h3>How do I delete my account or export data?</h3>
+        <p>Go to <em>Settings → Privacy</em> to request export or deletion. We’ll email confirmation to your account address.</p>
+      </div>
+      <div class="card span6">
+        <h3>What devices are supported?</h3>
+        <p>iPhone on iOS 15+. iPad support is functional but optimized for iPhone.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Contact us</h2>
+    <div class="card">
+      <p>Email <a href="mailto:support@buckit.app">support@buckit.app</a>. We typically reply within 48 hours.</p>
+      <p class="small">Please include your Buckit username, device model, and iOS version.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Policies</h2>
+    <div class="card">
+      <p><a href="privacy.html">Privacy Policy</a> • <a href="terms.html">Terms of Use</a> • <a href="changelog.html">Changelog</a></p>
+    </div>
+  </section>
+
+  <div class="footer">© 2025 Buckit. All rights reserved.</div>
+</div>
+</body>
+</html>

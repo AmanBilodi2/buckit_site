@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buckit — Every game, every bucket</title>
+<meta name="description" content="Turn pickup hoops into a real-life MyPlayer. Log 1v1s, climb ratings, earn badges, and find players your level at nearby parks and gyms.">
+<meta property="og:title" content="Buckit — Every game, every bucket">
+<meta property="og:description" content="Turn pickup hoops into a real-life MyPlayer. Log 1v1s, climb ratings, earn badges, and find players your level.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#ff7a00">
+<style>
+:root {
+  --bg: #0f1115;
+  --card: #151923;
+  --text: #e8ecf1;
+  --muted: #a8b0bd;
+  --accent: #ff7a00; /* Buckit orange */
+  --accent-2: #ffb36b;
+  --border: #222837;
+  --success: #27c93f;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.container { max-width: 980px; margin: 0 auto; padding: 24px; }
+.header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 0; }
+.brand { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 20px; }
+.badge { padding: 4px 10px; border: 1px solid var(--border); background: #0e131d; border-radius: 999px; color: var(--muted); font-size: 12px; }
+.hero { padding: 48px 0 20px; }
+h1 { font-size: 40px; line-height: 1.1; margin: 0 0 8px; letter-spacing: -0.02em; }
+.sub { font-size: 18px; color: var(--muted); margin-bottom: 20px; }
+.cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; }
+.button { display: inline-block; padding: 12px 16px; border-radius: 12px; border: 1px solid var(--border); background: var(--accent); color: #0b0d12; font-weight: 700; }
+.button.secondary { background: #0e131d; color: var(--text); }
+.grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
+.card { grid-column: span 12; background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px; }
+.card h3 { margin-top: 0; }
+.kv { display: grid; grid-template-columns: 140px 1fr; gap: 8px; font-size: 15px; }
+.kv div:nth-child(odd) { color: var(--muted); }
+.footer { margin: 48px 0 24px; padding-top: 12px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+.list { margin: 0; padding-left: 18px; }
+.section-title { font-size: 24px; margin: 28px 0 12px; }
+.small { font-size: 14px; color: var(--muted); }
+hr { border: none; border-top: 1px solid var(--border); margin: 20px 0; }
+code.inline { background: #0e131d; padding: 2px 6px; border-radius: 6px; border: 1px solid var(--border); }
+@media (min-width: 700px) {
+  .card.span6 { grid-column: span 6; }
+  .card.span4 { grid-column: span 4; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="brand">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <circle cx="12" cy="12" r="10" stroke="white" stroke-width="1.5"></circle>
+        <path d="M4 12h16M12 4v16" stroke="#ff7a00" stroke-width="1.5"></path>
+      </svg>
+      Buckit
+      <span class="badge">iOS</span>
+    </div>
+    <div class="cta-row">
+      <a class="button" href="#" aria-label="Download on the App Store">Download</a>
+      <a class="button secondary" href="support.html">Get Support</a>
+    </div>
+  </div>
+
+  <section class="hero">
+    <h1>Every game, every bucket</h1>
+    <p class="sub">Turn pickup hoops into a real-life MyPlayer. Log 1v1s, climb a fair rating, earn badges, and find players your level at nearby parks and gyms.</p>
+    <div class="cta-row">
+      <a class="button" href="#" aria-label="Download on the App Store">Get Buckit on iOS</a>
+      <a class="button secondary" href="support.html">Visit Support</a>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Features</h2>
+    <div class="grid">
+      <div class="card span6">
+        <h3>Create Your Player</h3>
+        <p>Choose position and playstyle; your rating reflects how you hoop in real life.</p>
+      </div>
+      <div class="card span6">
+        <h3>Log Real Games</h3>
+        <p>Search your opponent, record the result, and update both records in seconds.</p>
+      </div>
+      <div class="card span6">
+        <h3>Mutual Confirmation</h3>
+        <p>Both players verify results to keep things fair and reduce spam.</p>
+      </div>
+      <div class="card span6">
+        <h3>Credibility Score</h3>
+        <p>Clean history and confirmed games boost trust so your wins matter more.</p>
+      </div>
+      <div class="card span6">
+        <h3>Badges &amp; Progression</h3>
+        <p>Unlock and level up skill-based badges like Shot Maker, Floor General, Lockdown, and Glass Cleaner.</p>
+      </div>
+      <div class="card span6">
+        <h3>Discover Players &amp; Runs</h3>
+        <p>See who’s hooping near you, filter by rating, distance, or friends, and pull up to better runs.</p>
+      </div>
+      <div class="card span6">
+        <h3>Groups &amp; Community</h3>
+        <p>Organize games with your gym, school, or crew and keep the chat going.</p>
+      </div>
+      <div class="card span6">
+        <h3>Game History &amp; Stats</h3>
+        <p>Track W/L, streaks, head-to-heads, and badge progress—your hoops résumé, in your pocket.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">How it works</h2>
+    <ol class="list">
+      <li>Create your player</li>
+      <li>Find a nearby opponent or invite a friend</li>
+      <li>Hoop, log the game, and watch your rating and badges grow</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2 class="section-title">Details</h2>
+    <div class="card">
+      <div class="kv">
+        <div>Requires</div><div>iOS 15+</div>
+        <div>Permissions</div><div>Location (optional), Camera (optional for QR quick-add)</div>
+        <div>Support</div><div><a href="support.html">support page</a> • <a href="mailto:support@buckit.app">support@buckit.app</a></div>
+        <div>Legal</div><div><a href="privacy.html">Privacy Policy</a> • <a href="terms.html">Terms of Use</a></div>
+        <div>Changelog</div><div><a href="changelog.html">Release notes</a></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    © 2025 Buckit. All rights reserved.
+  </div>
+</div>
+</body>
+</html>
